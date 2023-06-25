@@ -15,4 +15,4 @@ This exercise covers the following fundamentals:
 6. Using a simple form.
 
 <h2>Preview</h2>
-
+<img src="Postcard.JPG" alt="Postcard Preview">
