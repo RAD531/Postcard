@@ -1,62 +1,100 @@
 * {
-	border: 1px dashed red;
+	/*border: 1px dashed red;*/
+	border: 1px;
 	min-height: 10px;
 }
 
 body {
 	background: black;
-}
-
-input {
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	border-bottom: grey;
-}
-
-button {
-	background-color: darkslateblue;
-	padding: 5px;
+	min-height: 97vh;
+	font-family: "Indie Flower", cursive;
 }
 
 .postcard {
 	background: white;
 	width: 400px;
-	height: 300px;
+	height: 350px;
 	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 }
 
 .postcard-header {
 	display: flex;
+	min-height: 20%;
 }
 
 .postcard-header img {
 	width: 50px;
 	height: 50px;
+	padding-top: 8px;
+	padding-right: 15px;
 }
 
 .postcard-header h1 {
 	width: 400px;
 	margin: 0px;
+	text-align: center;
+	padding-top: 13px;
 }
 
 .postcard-body {
 	display: flex;
+	min-height: 60%;
+	font-weight: bold;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .body-left p {
-	font-size: 10px;
+	font-size: 15px;
 }
 
 .body-left p:first-child {
 	margin-top: none;
 }
 
+.body-right input:first-child {
+	margin-top: 15px;
+}
+
+.body-right input {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px solid gray;
+	border-radius: 4px;
+	font-family: "Indie Flower", cursive;
+	color: rgb(46, 45, 45);
+	font-size: 15px;
+	font-weight: bold;
+}
+
 .body-left,
 .body-right {
 	padding: 5px;
+	width: 50%;
 }
 
 .postcard-footer {
 	text-align: center;
+	min-height: 20%;
+}
+
+.postcard-footer button {
+	font-family: "Indie Flower", cursive;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: lightgray;
+	padding: 5px;
+	color: black;
+	margin-top: 15px;
+}
+
+.postcard-footer button:hover {
+	background-color: darkslateblue;
+	color: white;
 }
